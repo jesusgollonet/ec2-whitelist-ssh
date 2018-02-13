@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-const whitelist = require('../lib/whitelist-ip-ssh-ec2');
+const whitelist = require('../lib/ec2-whitelist-ssh');
 
-// args security group, ip, region
+// args security group, ip, time, region
 
 const args = process.argv.slice(2);
 
