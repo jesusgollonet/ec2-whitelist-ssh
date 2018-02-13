@@ -1,0 +1,13 @@
+let g:neoformat_javascript_prettier= {
+            \ 'exe': 'prettier',
+            \ 'args': ['--tab-width 4', '--single-quote true']
+            \ }
+
+let g:neoformat_enabled_javascript = ['prettier']
+
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * Neoformat
+augroup END
+
+map ,r :w\|:!node index.js<cr>
