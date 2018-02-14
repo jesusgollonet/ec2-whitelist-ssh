@@ -1,5 +1,10 @@
 {
-  "dependencies": {
-    "aws-sdk": "^2.188.0"
-  }
+    "name": "ec2-whitelist-ssh",
+    "version": "1.0.0",
+    "bin": {
+        "ec2-whitelist-ssh": "bin/whitelist.js"
+    },
+    "dependencies": {
+        "aws-sdk": "^2.188.0"
+    }
 }
